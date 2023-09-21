@@ -5,18 +5,22 @@ import java.util.Scanner;
 public class SwitchSemBreak {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        //Scanner opp = new Scanner(System.in);
 
         String classe = "";
         int forca = 0;
         int inteligencia = 0;
         int destreza = 0;
         int life = 0;
-        String nome ;
+        String nome = "";
 
+        System.out.println("Digite o nome do seu personagem : ");
+        nome = sc.next();
         System.out.println("Qual sua classe: /" +
                 "\n 1 = ork \n 2 = humano \n 3 = elfo da floresta \n " +
                 "4 = elfo da noite \n 5 = tigre \n ---DIGITE UMA OPCAO---");
         String op = sc.next();
+
 
         switch (op.toLowerCase()){
             case"1":
@@ -76,8 +80,7 @@ public class SwitchSemBreak {
 
 
 
-        System.out.println("Digite o nome do seu personagem : ");
-        nome = sc.nextLine();
+
         System.out.println("Conferindo seu nome, classes e atributos:");
         System.out.println("NOME ---------: " + nome);
         System.out.println("CLASSE -------: " + classe);
